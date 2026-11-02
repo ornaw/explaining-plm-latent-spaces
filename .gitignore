@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+external/
+hf_input/
+hf_output/
+results/**
+!results/**/
+!results/ec_audit/proteins.csv
+!results/esm2/esm2_t36_3B_UR50D/embedding_manifest.json
+!results/graphpart/explore_20260928T005618Z/unlabelled_k5/folds_t0p40_all_records.csv

@@ -1,0 +1,58 @@
+{
+  "schema": "esm2-embedding-manifest-v1",
+  "model": {
+    "key": "esm2_3b",
+    "checkpoint": "facebook/esm2_t36_3B_UR50D",
+    "revision": "476b639933c8baad5ad09a60ac1a87f987b656fc",
+    "width": 2560
+  },
+  "input": {
+    "fasta_path": "data/phosphatase/phosphatase/tmp/sequences.fasta",
+    "fasta_sha256": "c806be15f5eb32c2fe5fdf89c1174df2e8b0fa2b43873d19a86516c03e71149f",
+    "sequence_digest": "fb6455aa225449b42ba41e8c37ccf66aeb1370b4d9b91e368c90bffc817ef914",
+    "reference_h5": "data/phosphatase/phosphatase/tmp/prot_t5.h5",
+    "record_count": 1587
+  },
+  "generation": {
+    "route": "protspace-local",
+    "generated_at_utc": "2026-09-06T02:13:12.270654+00:00",
+    "generation_seconds": 352.6755762890002,
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "software_versions": {
+      "h5py": "3.16.0",
+      "huggingface-hub": "0.36.2",
+      "numpy": "2.1.3",
+      "torch": "2.11.0+cu128",
+      "transformers": "4.57.6"
+    },
+    "protspace_revision": "1bcbec518df16c6964df351d3626c3961a23f73e",
+    "protspace_source_sha256": {
+      "__init__.py": "e876bc62434facba15e69e409f92bea74bbba668cd44efe1472593e548d868b4",
+      "biocentral.py": "ff6f20c2ed8e9db0189749d0e8c992138d2a4e28814255908e3d9d01f83691a3",
+      "local.py": "085a9c3a70d445b92a418cfef0662e8f67b4f1e438d02abe393b92bdb2301151"
+    },
+    "representation_layer": "final_hidden_layer",
+    "pooling": "residue_mean_amino_acid_tokens_only",
+    "special_tokens": "excluded",
+    "sequence_policy": "complete_sequences",
+    "max_length": 2486
+  },
+  "artifact": {
+    "path": "data/phosphatase/phosphatase/esm2_t36_3B_UR50D_full_length.h5",
+    "sha256": "00c27d5730ba59db9ca4178118a2ba5fc4e4e4ecc41266afdc9e000951e8571c",
+    "record_count": 1587,
+    "vector_width": 2560,
+    "dtype": "float32"
+  },
+  "validation": {
+    "validated_at_utc": "2026-09-06T02:14:58.589666+00:00",
+    "duplicate_sequence_groups": 56,
+    "duplicate_sequence_records": 163,
+    "max_duplicate_absolute_difference": 0.0,
+    "atol": 1e-06,
+    "rtol": 1e-05,
+    "python": "3.12.14",
+    "h5py": "3.16.0",
+    "numpy": "2.5.2"
+  }
+}
